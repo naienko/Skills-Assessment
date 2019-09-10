@@ -1,3 +1,30 @@
+Problem-solving
+---------------
+Had to install gulp-cli to get gulp to run on the command line (we worked with grunt before).
+Had to experiment a bit to understand how the SASS complier wanted the definitions to be written
+Had to add jquery link to index page
+
+Failures
+--------
+Need help understanding how to control opacity of images
+Need so much practise with css animations
+
+What I did
+----------
+Step 1: study the mock up -- how do the elements seem to flow, what's the best positioning model for the elements as displayed, mentally wireframe the elements as they might nest
+Step 2: run the Getting Started steps
+Step 3: lay out those mental wireframes as sections and divs in the html
+Step 4: set up the SASS variables and import all fonts and javascripts
+Step 5: play with flexbox. play for hours. tweak the widths, heights, positioning
+Step 6: insert 'content', and style appropriately
+Step 7: write javascript for random images
+Step 8: css and js animations
+
+Constantly monitor result in an open browser window.
+My personal workflow involves a lot of checking back and forth between code and result. Lots of quick googling and checking with devdocs.io to make sure I'm using the right selectors. Occasionally pause to swear at demanding cat (office work will not have this step in workflow).
+This is very imperfect. In a team setting I would have asked a lot of questions on this first project. 
+
+
 # JLB Skills Assessment
 Copyright © 2018 JLB All rights reserved.
 

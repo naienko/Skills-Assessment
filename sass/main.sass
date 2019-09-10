@@ -1,10 +1,114 @@
 @import 'variables'
 
-
-// Delete Me and Good Luck!
 body
 	height: 100vh
-	display: flex 
 	align-items: center 
 	justify-content: center 
-	text-align: center
+	font-family: $main-font
+	@extend %flat-box
+
+.body-container
+	display: flex 
+	flex-direction: column
+	width: 100%
+	@extend %flat-box
+
+.highlight
+	color: $red
+	font-weight: bold
+
+#hero
+	background-image: url('../assets/HERO 1.jpg')
+	height: 944px
+	@extend %flat-box
+
+	#headers
+		width: 35%
+		margin: auto
+		font-weight: 900
+		text-transform: uppercase
+		font-size: 40px
+		text-align: center
+		padding-top: 20%
+		#welcome
+			@extend %flat-box
+			color: $red
+		h3, p
+			@extend %flat-box
+			color: $white
+		p
+			font-weight: normal
+			font-size: 20px
+			text-transform: none
+
+#divider
+	background: $red
+	height: 70px
+
+#content 
+	@extend %flat-box
+	display: flex
+	flex-direction: row
+	padding-top: 10px
+
+	#col1
+		flex-basis: 33%
+		max-width: 571px
+		padding-right: 10px
+		div
+			display: inline
+	
+	#col2
+		flex-basis: 66%
+		margin-top: -270px
+		#video
+			width: 60%
+			height: 430px
+			margin-bottom: 10px
+			background: $black
+			color: $white
+			box-shadow: 0 10px 30px $black
+		#pushdown
+			display: flex
+			flex-direction: row
+			#collage
+				width: 33%
+				max-width: 384px
+			#assessment
+				max-width: 66%
+				margin-left: 70px
+				margin-top: 100px
+				h4
+					@extend %flat-box
+					font-weight: 900
+					text-transform: uppercase
+					font-size: 30px
+				h3
+					@extend %flat-box
+					font-weight: 900
+					text-transform: uppercase
+					font-size: 40px
+					color: $red
+				hr
+					border: none
+					height: 3px
+					background-color: $black
+					width: 108%
+
+	img
+		max-width: 100%
+		height: auto
+
+.come-in 
+  transform: translateY(150px)
+  animation: come-in 0.8s ease forwards
+
+.come-in:nth-child(odd) 
+  animation-duration: 0.6s
+
+.already-visible 
+  transform: translateY(0)
+  animation: none
+
+@keyframes come-in 
+  to {transform: translateY(0)}
